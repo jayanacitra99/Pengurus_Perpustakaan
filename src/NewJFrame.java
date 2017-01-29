@@ -71,7 +71,7 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(60, 100, 110, 30);
 
-        jJabatan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ketua", "Sie Humas", "Sie SDM", "Sie Mading", "Sie Sarpra", "Sie Sirkulasi", "Sie Litbang", "Sie SPP", "Sie Piket" }));
+        jJabatan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--Pilih Jabatan--", "Ketua", "Sekertaris", "Bendahara", "Sie Humas", "Sie SDM", "Sie Mading", "Sie Sarpra", "Sie Sirkulasi", "Sie Litbang", "Sie SPP", "Sie Piket" }));
         jJabatan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jJabatanActionPerformed(evt);
@@ -137,6 +137,26 @@ public class NewJFrame extends javax.swing.JFrame {
              jtxtmotivasi.setText("LIVE ON");
          }
          else
+            if(jJabatan.getSelectedItem().equals("Sekertaris"))
+            {
+             jtxtnama.setText("Anggarda Paramita");
+             jtxtttl.setText("Malang, 25 Maret 2000");
+             jtxtfb.setText("Anggarda Paramita");
+             jtxttw.setText("@anggarda06");
+             jtxtig.setText("@anggardaprmt");
+             jtxtmotivasi.setText("WHATEVER MAKES YOU SAD LEAVE IT AND WHATEVER MAKES YOU SMILE HOLD IT");
+         }
+         else
+            if(jJabatan.getSelectedItem().equals("Bendahara"))
+            {
+             jtxtnama.setText("Bernadeth Rosalia Cika Andhini");
+             jtxtttl.setText("Semarang, 24 Mei 2000");
+             jtxtfb.setText("Rosalia Cika");
+             jtxttw.setText("@andicika2");
+             jtxtig.setText("@begidakan_");
+             jtxtmotivasi.setText("DO SMALL WITH A GREAT LOVE");
+         }
+         else    
             if(jJabatan.getSelectedItem().equals("Sie Humas"))
          {
              jtxtnama.setText("Mileyanda Qurrota A'yun");
@@ -161,13 +181,61 @@ public class NewJFrame extends javax.swing.JFrame {
          {
              jtxtnama.setText("Gupita Zahra Laksmi Mahardhika");
              jtxtttl.setText("Sidoarjo, 25 Oktober 1999");
-             jtxtfb.setText("Mileyanda Qurrota");
-             jtxttw.setText("@mileyanda");
-             jtxtig.setText("@mileyanda");
-             jtxtmotivasi.setText("I'M LIMITED EDITION PERSON");
+             jtxtfb.setText("Mahardhika");
+             jtxttw.setText("@soediek");
+             jtxtig.setText("@soediek");
+             jtxtmotivasi.setText("NO ONE CAN TEACH HOW TO STAND IN THE TOP. YOU NEED TO FIND YOUR OWN INGRIDIENTS");
          }
          else
-            
+            if(jJabatan.getSelectedItem().equals("Sie Sarpra"))
+            {
+             jtxtnama.setText("Andreas Susanto Putra");
+             jtxtttl.setText("Mojokerto, 6 Desember 1999");
+             jtxtfb.setText("Andreas Susanto");
+             jtxttw.setText("-");
+             jtxtig.setText("@andreaspopo");
+             jtxtmotivasi.setText("SUATU SAAT AKAN DATANG HARI DI MANA SEMUA AKAN MENJADI KENANGAN");
+         }
+         else
+            if(jJabatan.getSelectedItem().equals("Sie Sirkulasi"))
+            {
+             jtxtnama.setText("Roa Nuha Kalijaga");
+             jtxtttl.setText("Malang, 5 Maret 2000");
+             jtxtfb.setText("R Hasan Nuha K");
+             jtxttw.setText("-");
+             jtxtig.setText("@roa_nuh");
+             jtxtmotivasi.setText("POSITIVE IN ANY CONDITION THAT THE BEST CHOICE FRON GOD");
+         }
+         else
+            if(jJabatan.getSelectedItem().equals("Sie Litbang"))
+            {
+             jtxtnama.setText("Arthur Persada Heryana");
+             jtxtttl.setText("Nganjuk, 23 Oktober 1999");
+             jtxtfb.setText("Persada Arthur");
+             jtxttw.setText("-");
+             jtxtig.setText("@arthurart_");
+             jtxtmotivasi.setText("DON'T WASTE YOUR TIME LOOKING BACK YOU'RE NOT GOING THAT WAY");
+         }
+         else
+            if(jJabatan.getSelectedItem().equals("Sie SPP"))
+            {
+             jtxtnama.setText("Rizaldi Wahaz");
+             jtxtttl.setText("Kediri, 20 November 1999");
+             jtxtfb.setText("Rizaldi Wahaz");
+             jtxttw.setText("@rizaldi_wahaz");
+             jtxtig.setText("@rizaldi_wahaz");
+             jtxtmotivasi.setText("BE YOURSELF :v");
+         }
+         else
+            if(jJabatan.getSelectedItem().equals("Sie Piket"))
+            {
+             jtxtnama.setText("Wildan Ziaulhaq");
+             jtxtttl.setText("Ponorogo, 28 Maret 2000");
+             jtxtfb.setText("Wildan Ziaulhaq");
+             jtxttw.setText("-");
+             jtxtig.setText("-");
+             jtxtmotivasi.setText("BE PREPARED");
+         }
     }//GEN-LAST:event_jJabatanActionPerformed
 
     /**
